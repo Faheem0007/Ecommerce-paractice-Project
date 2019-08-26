@@ -1,0 +1,47 @@
+.menu-item {
+  min-width: 30%;
+  height: 240px;
+  display: flex;
+  flex: 1 1 100px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  text-align: center;
+  margin: 0 7.5px 15px;
+  transition: all 6s;
+  overflow: hidden;
+  cursor: pointer;
+
+  &.large {
+    height: 360px;
+  }
+
+  .backgroung-image {
+    width: 100%;
+    transition: all 6s;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &:hover .backgroung-image{
+      transform: scale(1.1);
+
+  }
+  .content {
+    position: absolute;
+    background-color: #fff;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0.7;
+    padding:20px 30px;
+    border:1px solid #6e6e6e;
+
+    h1 {
+        margin: 0 !important;
+        font-weight: lighter;
+    }
+  }
+}
